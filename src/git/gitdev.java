@@ -65,19 +65,24 @@ public class gitdev {
         email[0] = e;
     }
     public static void Listar(){
+        System.out.println("NOMES:");
         for(int i=0; i<nome.length;i++){
             if(nome[i] != null){
-                System.out.println(nome[i]);
+                System.out.println("[" +(i+1)+ "] "+nome[i]);
             }
         }
+        System.out.print("\n");
+        System.out.println("TELEFONES:");
         for(int i=0;i<telefone.length;i++){
             if(telefone[i] != null){
-                System.out.println(telefone[i]);
+                System.out.println("[" +(i+1)+ "] "+telefone[i]);
             }
         }
+        System.out.print("\n");
+        System.out.println("E-MAILS:");
         for(int i=0;i<email.length;i++){
             if(email[i] != null){
-                System.out.println(email[i]);
+                System.out.println("[" +(i+1)+ "] "+email[i]);
             }
         }
     }
