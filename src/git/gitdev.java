@@ -22,6 +22,7 @@ public class gitdev {
                     break;
 
                 case 2:
+                    Listar();
                     break;
 
                 case 3:
@@ -62,9 +63,23 @@ public class gitdev {
         nome[0] = usuario;
         telefone[0] = tel;
         email[0] = e;
-        System.out.println(nome[0]);
-        System.out.println(telefone[0]);
-        System.out.println(email[0]);
+    }
+    public static void Listar(){
+        for(int i=0; i<nome.length;i++){
+            if(nome[i] != null){
+                System.out.println(nome[i]);
+            }
+        }
+        for(int i=0;i<telefone.length;i++){
+            if(telefone[i] != null){
+                System.out.println(telefone[i]);
+            }
+        }
+        for(int i=0;i<email.length;i++){
+            if(email[i] != null){
+                System.out.println(email[i]);
+            }
+        }
     }
     
 }
