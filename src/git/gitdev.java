@@ -139,7 +139,6 @@ static void Remover(String remove) {
             nome[i] = null;
             telefone[i] = null;
             email[i] = null;
-            
                for (int j = i; j < quantidade - 1; j++) {
                 nome[j] = nome[j + 1];
                 telefone[j] = telefone[j + 1];
@@ -150,7 +149,9 @@ static void Remover(String remove) {
             email[quantidade - 1] = null;
 
             quantidade--; 
+            Listar();
             return;
+
         }
     }
     System.out.println("Contato não encontrado.");
