@@ -26,6 +26,7 @@ public class gitdev {
                     break;
 
                 case 3:
+                    Verificar();
                     break;
 
                 case 4:
@@ -43,7 +44,7 @@ public class gitdev {
     }
     public static void exibirCabecalho(){
         System.out.println("==============================");
-        System.out.println("       Agenda de Contatos     ");
+        System.out.println("      Agenda de Contatos      ");
         System.out.println("==============================");
 
     }
@@ -58,11 +59,13 @@ public class gitdev {
     static String[]nome = new String[50];
     static String[]telefone = new String[50];
     static String[]email = new String[50];
+    static int quantidade = 0;
 
     public static void Adicionar(String usuario, String tel, String e){
-        nome[0] = usuario;
-        telefone[0] = tel;
-        email[0] = e;
+        nome[quantidade] = usuario;
+        telefone[quantidade] = tel;
+        email[quantidade] = e;
+        quantidade++;
     }
     public static void Listar(){
         System.out.println("NOMES:");
@@ -84,6 +87,18 @@ public class gitdev {
             if(email[i] != null){
                 System.out.println("[" +(i+1)+ "] "+email[i]);
             }
+        }
+    }
+    public static void Verificar(){
+        int sub = 0;
+        sub = nome.length - quantidade;
+        if(quantidade == nome.length && quantidade == telefone.length && quantidade == email.length){
+            System.out.println("Está cheio!!!!");
+            return;
+        }
+        else{
+            System.out.println("Quantidade de espaço em todos os contatos: "+sub);
+            return;
         }
     }
     
