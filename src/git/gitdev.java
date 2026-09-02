@@ -3,10 +3,8 @@ import java.util.Scanner;
 public class gitdev {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String[]nome = new String[50];
-        String[]telefone = new String[50];
-        String[]email = new String[50];
         int opcao;
+        String usuario, tel, e;
         do{
             exibirCabecalho();
             exibirMenu();
@@ -14,6 +12,13 @@ public class gitdev {
 
             switch(opcao){
                 case 1:
+                    System.out.print("Digite um nome:");
+                    usuario = scan.next();
+                    System.out.print("Digite o seu telefone:");
+                    tel = scan.next();
+                    System.out.print("Digite o seu email:");
+                    e = scan.next();
+                    Adicionar(usuario, tel, e);
                     break;
 
                 case 2:
@@ -48,4 +53,18 @@ public class gitdev {
         System.out.println("4)Sair.");
         System.out.print("Escolha:");
     }
+
+    static String[]nome = new String[50];
+    static String[]telefone = new String[50];
+    static String[]email = new String[50];
+
+    public static void Adicionar(String usuario, String tel, String e){
+        nome[0] = usuario;
+        telefone[0] = tel;
+        email[0] = e;
+        System.out.println(nome[0]);
+        System.out.println(telefone[0]);
+        System.out.println(email[0]);
+    }
+    
 }
