@@ -36,6 +36,11 @@ public class gitdev {
                     Buscar(busca);
                     break;
                 
+                    case 5:
+                    System.out.println("Insira o nome do contato que deseja remover: ");
+                    remove = scan.next().toLowerCase();
+                    Remover(remove);
+                    break;
                 default: System.out.println("Opção Invalida!");
                     
             }
@@ -124,6 +129,33 @@ static void Buscar(String busca) {
     System.out.println("Contato não encontrado.");
 }
 
+static void Remover(String remove) {
+    for(int i=0; i<nome.length; i++){
+        if(nome[i] != null && nome[i].toLowerCase().contains(remove)){
+            System.out.println("Contato REMOVIDO!");
+            System.out.println(nome[i]);
+            System.out.println("Telefone: " + telefone[i]);
+            System.out.println("Email: " + email[i]);
+            nome[i] = null;
+            telefone[i] = null;
+            email[i] = null;
+            
+               for (int j = i; j < quantidade - 1; j++) {
+                nome[j] = nome[j + 1];
+                telefone[j] = telefone[j + 1];
+                email[j] = email[j + 1];
+            }
+            nome[quantidade - 1] = null;
+            telefone[quantidade - 1] = null;
+            email[quantidade - 1] = null;
 
+            quantidade--; 
+            return;
+        }
+    }
+    System.out.println("Contato não encontrado.");
+
+
+}
 
 }
