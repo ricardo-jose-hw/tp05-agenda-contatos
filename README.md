@@ -11,7 +11,7 @@ Requisitos específicos
 Dev Branch Responsabilidade A feature/inclusao-listagem Inclusão de contatos com verificação de agenda cheia e listagem numerada.
 B feature/busca-exclusao Busca por parte do nome e exclusão com deslocamento dos elementos do vetor. 
 Conflito obrigatório Os dois desenvolvedores devem reescrever, cada um em sua branch e sem combinar o conteúdo, as linhas do método exibirMenu(). 
-O merge das duas branches na main deve gerar conflito, que será resolvido em conjunto e documentado no relatóri
+O merge das duas branches na main deve gerar conflito, que será resolvido em conjunto e documentado no relatório
 
 Divisão de Tarefas
 
