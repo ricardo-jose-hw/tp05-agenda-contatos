@@ -56,6 +56,19 @@ public class gitdev {
         System.out.println("==============================");
 
     }
+<<<<<<< HEAD
+=======
+    public static void exibirMenu(){
+    System.out.println("=== AGENDA DE CONTATOS ===");
+    System.out.println("1 - Adicionar");
+    System.out.println("2 - Listar");
+    System.out.println("3 - Buscar");
+    System.out.println("4 - Remover");
+    System.out.println("0 - Sair");
+    System.out.println("Escolha uma opçãosss: ");
+    System.out.println("Escolha uma opçãosss: ");
+    }
+>>>>>>> a-inclusao
 
  
        
