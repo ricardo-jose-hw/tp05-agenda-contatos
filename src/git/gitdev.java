@@ -1,4 +1,3 @@
-package git;
 import java.util.Scanner;
 public class gitdev {
     public static void main(String[] args) {
@@ -49,11 +48,14 @@ public class gitdev {
 
     }
     public static void exibirMenu(){
-        System.out.println("1)Adicionar contatos.");
-        System.out.println("2)Listagem numerada.");
-        System.out.println("3)Verificação.");
-        System.out.println("4)Sair.");
-        System.out.print("Escolha:");
+    System.out.println("=== AGENDA DE CONTATOS ===");
+    System.out.println("1 - Adicionar");
+    System.out.println("2 - Listar");
+    System.out.println("3 - Buscar");
+    System.out.println("4 - Remover");
+    System.out.println("0 - Sair");
+    System.out.println("Escolha uma opçãosss: ");
+    System.out.println("Escolha uma opçãosss: ");
     }
 
     static String[]nome = new String[50];
