@@ -67,6 +67,7 @@ static void exibirMenu(){
     System.out.println("3 - BUSCAR Contatos");
     System.out.println("4 - EXCLUIR  Contatos");
     System.out.println("5 - SAIR");
+    System.out.println("6 - VERIFICAR Contatos");
 
 
 
