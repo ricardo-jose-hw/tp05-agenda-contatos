@@ -8,8 +8,8 @@ public class gitdev {
         int opcao;
         String usuario, tel, e, busca="", remove="";
         do{
-            exibirCabecalho();
             exibirMenu();
+            System.out.print("Escolha uma opção:");
             opcao = scan.nextInt();
 
             switch(opcao){
@@ -32,32 +32,29 @@ public class gitdev {
                     break;
 
                 case 4:
-                    System.out.println("Insira o nome do contato que deseja buscar: ");
+                    System.out.print("Insira o nome do contato que deseja buscar: ");
                     busca = scan.next().toLowerCase();
                     Buscar(busca);
                     break;
                 
                     case 5:
-                    System.out.println("Insira o nome do contato que deseja remover: ");
+                    System.out.print("Insira o nome do contato que deseja remover: ");
                     remove = scan.next().toLowerCase();
                     Remover(remove);
+                    break;
+
+                    case 6:
+                    System.out.println("Saindo...");
                     break;
                 default: System.out.println("Opção Invalida!");
                     
             }
-        }while(opcao !=4);
+        }while(opcao !=6);
 
         scan.close();
 
 
     }
-    public static void exibirCabecalho(){
-        System.out.println("==============================");
-        System.out.println("      Agenda de Contatos      ");
-        System.out.println("==============================");
-
-    }
-
  
        
 static void exibirMenu(){
@@ -65,11 +62,10 @@ static void exibirMenu(){
 
     System.out.println("1 - CADASTRAR Contato");
     System.out.println("2 - LISTAR Contatos");
-    System.out.println("3 - BUSCAR Contatos");
-    System.out.println("4 - EXCLUIR  Contatos");
-    System.out.println("5 - SAIR");
-    System.out.println("6 - VERIFICAR Contatos");
-
+    System.out.println("3 - VERIFICAR Contatos");
+    System.out.println("4 - BUSCAR  Contatos");
+    System.out.println("5 - REMOVER CONTATO");
+    System.out.println("6 - SAIR");
 
 
 }
