@@ -8,7 +8,6 @@ public class gitdev {
         int opcao;
         String usuario, tel, e, busca="", remove="";
         do{
-            exibirCabecalho();
             exibirMenu();
             System.out.print("Escolha uma opção:");
             opcao = scan.nextInt();
@@ -33,13 +32,13 @@ public class gitdev {
                     break;
 
                 case 4:
-                    System.out.println("Insira o nome do contato que deseja buscar: ");
+                    System.out.print("Insira o nome do contato que deseja buscar: ");
                     busca = scan.next().toLowerCase();
                     Buscar(busca);
                     break;
                 
                     case 5:
-                    System.out.println("Insira o nome do contato que deseja remover: ");
+                    System.out.print("Insira o nome do contato que deseja remover: ");
                     remove = scan.next().toLowerCase();
                     Remover(remove);
                     break;
@@ -56,13 +55,6 @@ public class gitdev {
 
 
     }
-    public static void exibirCabecalho(){
-        System.out.println("==============================");
-        System.out.println("      Agenda de Contatos      ");
-        System.out.println("==============================");
-
-    }
-
  
        
 static void exibirMenu(){
