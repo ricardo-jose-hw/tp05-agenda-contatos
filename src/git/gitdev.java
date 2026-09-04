@@ -44,6 +44,7 @@ public class gitdev {
                     break;
 
                     case 6:
+                    System.out.println("Saindo...");
                     break;
                 default: System.out.println("Opção Invalida!");
                     
