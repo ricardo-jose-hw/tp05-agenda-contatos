@@ -68,7 +68,6 @@ static void exibirMenu(){
     System.out.println("6 - SAIR");
 
 
-
 }
 static String[]nome = new String[50];
     static String[]telefone = new String[50];
