@@ -1,3 +1,4 @@
+package git;
 import java.util.Scanner;
 
 public class gitdev {
@@ -56,19 +57,6 @@ public class gitdev {
         System.out.println("==============================");
 
     }
-<<<<<<< HEAD
-=======
-    public static void exibirMenu(){
-    System.out.println("=== AGENDA DE CONTATOS ===");
-    System.out.println("1 - Adicionar");
-    System.out.println("2 - Listar");
-    System.out.println("3 - Buscar");
-    System.out.println("4 - Remover");
-    System.out.println("0 - Sair");
-    System.out.println("Escolha uma opçãosss: ");
-    System.out.println("Escolha uma opçãosss: ");
-    }
->>>>>>> a-inclusao
 
  
        
@@ -85,6 +73,52 @@ static void exibirMenu(){
 
 
 }
+static String[]nome = new String[50];
+    static String[]telefone = new String[50];
+    static String[]email = new String[50];
+    static int quantidade = 0;
+
+    public static void Adicionar(String usuario, String tel, String e){
+        nome[quantidade] = usuario;
+        telefone[quantidade] = tel;
+        email[quantidade] = e;
+        quantidade++;
+    }
+    public static void Listar(){
+        System.out.println("NOMES:");
+        for(int i=0; i<nome.length;i++){
+            if(nome[i] != null){
+                System.out.println("[" +(i+1)+ "] "+nome[i]);
+            }
+        }
+        System.out.print("\n");
+        System.out.println("TELEFONES:");
+        for(int i=0;i<telefone.length;i++){
+            if(telefone[i] != null){
+                System.out.println("[" +(i+1)+ "] "+telefone[i]);
+            }
+        }
+        System.out.print("\n");
+        System.out.println("E-MAILS:");
+        for(int i=0;i<email.length;i++){
+            if(email[i] != null){
+                System.out.println("[" +(i+1)+ "] "+email[i]);
+            }
+        }
+    }
+    public static void Verificar(){
+        int sub = 0;
+        sub = nome.length - quantidade;
+        if(quantidade == nome.length && quantidade == telefone.length && quantidade == email.length){
+            System.out.println("Está cheio!!!!");
+            return;
+        }
+        else{
+            System.out.println("Quantidade de espaço em todos os contatos: "+sub);
+            return;
+        }
+    }
+
 
 static void Buscar(String busca) {
     for(int i=0; i<nome.length; i++){
