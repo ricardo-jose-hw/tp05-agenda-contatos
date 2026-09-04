@@ -42,10 +42,13 @@ public class gitdev {
                     remove = scan.next().toLowerCase();
                     Remover(remove);
                     break;
+
+                    case 6:
+                    break;
                 default: System.out.println("Opção Invalida!");
                     
             }
-        }while(opcao !=4);
+        }while(opcao !=6);
 
         scan.close();
 
@@ -65,10 +68,10 @@ static void exibirMenu(){
 
     System.out.println("1 - CADASTRAR Contato");
     System.out.println("2 - LISTAR Contatos");
-    System.out.println("3 - BUSCAR Contatos");
-    System.out.println("4 - EXCLUIR  Contatos");
-    System.out.println("5 - SAIR");
-    System.out.println("6 - VERIFICAR Contatos");
+    System.out.println("3 - VERIFICAR Contatos");
+    System.out.println("4 - BUSCAR  Contatos");
+    System.out.println("5 - REMOVER CONTATO");
+    System.out.println("6 - SAIR");
 
 
 
