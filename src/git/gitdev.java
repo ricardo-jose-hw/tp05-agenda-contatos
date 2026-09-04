@@ -10,6 +10,7 @@ public class gitdev {
         do{
             exibirCabecalho();
             exibirMenu();
+            System.out.print("Escolha uma opção:");
             opcao = scan.nextInt();
 
             switch(opcao){
