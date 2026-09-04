@@ -1,3 +1,4 @@
+package git;
 import java.util.Scanner;
 public class gitdev {
     public static void main(String[] args) {
@@ -7,6 +8,7 @@ public class gitdev {
         do{
             exibirCabecalho();
             exibirMenu();
+            System.out.print("Digite uma opção:");
             opcao = scan.nextInt();
 
             switch(opcao){
