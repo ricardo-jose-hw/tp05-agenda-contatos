@@ -1,3 +1,4 @@
+package git;
 import java.util.Scanner;
 
 public class gitdev {
